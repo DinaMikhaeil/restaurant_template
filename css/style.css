@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Jomhuria&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,800;1,300&display=swap');
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+  font-family: 'Work Sans', sans-ser;
+}
+header{
+    height: 100vh;
+    background: url('../images/home_bg.jpeg') center center/cover no-repeat;
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background: cover; */
+
+
+position: relative;
+
+}
+.navbar{
+ 
+display: flex;
+justify-content: space-between;
+background: red;
+align-items: center;
+
+}
+.logo img{
+    width: 80px;
+    margin-left: 100px;
+}
+nav ul{
+    display: flex;
+    margin-right: 100px;
+    list-style: none;
+   
+}
+nav li{
+    
+    
+}
+nav li a{
+    text-decoration: none;
+    padding: 0 25px;
+    font-weight: 500;
+    color: white;
+    
+}
+nav li a:hover{
+    border-bottom: 1px solid orange;
+   
+}
+header .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    height: 75%;
+}
+header .content h1{
+    font-size: 35px;
+    color: white;
+}
+header .content p{
+   margin: 20px 0 40px ;
+   color: white;
+}
+header .content h1 .welcome{
+    color: orange;
+}
+header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5)
+    ;
+}
+ .btn{
+display: inline-block;
+padding: 10px;
+text-decoration: none;
+border-radius: 15px;
+
+}
+.btn-primary{
+    border: 1px solid white;
+    color: white;
+}
+.btn-primary:hover,.secondary-btn:hover,.menu .btn:hover,.contact .btn:hover{
+    background: orange;
+    color: black;
+    cursor: pointer;
+}
+.secondary-btn
+,.menu .btn,.contact .btn{
+    color: white;
+    background-color: #383848;
+    margin-top: 10px;
+}
+header *{
+    z-index: 10;
+}
+.about .container{
+   max-width: 80%;
+   height: 80vh;
+    margin: auto;
+}
+ .about{ 
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    /* height: 80vh; */
+} 
+.title,.offers .title{
+    text-align: center;
+    
+}
+.title h2 ,.offers .title h2{
+    color: rgba(0, 0, 0, 0.916);
+    font-size: 30px;
+    padding: 20px 0 10px 0;
+}
+.offers .title h2{
+color: orange;
+}
+
+.title p{
+    padding-bottom: 100px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #9a9a9a;
+}
+.about .content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about img{ 
+    margin-left: 80px;
+    width: 450px;
+}
+.about .content p{
+color: #9a9a9a;
+font-weight: 500;
+line-height: 1.6;
+}
+.offers{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    background: url('../images/offer-background.jpg') center center/cover fixed;
+
+}
+.offers .title p{
+    color: white;
+    font-weight: 500;
+}
+.offers .offer-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.offers .offer-items img{
+    width: 200px;
+
+}
+del{
+    color: yellow;
+}
+.offers .offer-items h3{
+    margin: 10px 0;
+    font-size: 25px;
+}
+.offers .offer-items p{
+    font-size: 14px;
+    margin: 15px 0;
+}
+.offers .offer-items span{
+    font-size: 18px ;
+    font-weight: 800px;
+}
+.menu{
+    height: 140vh;
+}
+.menu .title h2{
+    color: orange;
+}
+.menu-items{
+    display: flex;
+    justify-content: center;
+    
+}
+.menu-items-right img{
+width: 100px;
+border-radius: 50%;
+
+}
+.menu-item{
+    display: flex;
+    margin: 20px;
+}
+.menu-item div{
+    padding-left: 10px;
+    padding-top: 5px;
+    
+}
+.menu-item div h3{
+    color:rgba(45, 21, 45, 0.612);
+    padding-bottom: 10px;
+    
+
+}
+.menu-item div h3 span{
+    padding-left: 200px;
+    font-size: 16px;
+    color: rgb(255, 213, 0);
+    
+}
+.menu .btn{
+     display: block;
+    margin: auto;
+    width: 150px;
+    font-size: 20px;
+   
+}
+.daytime .container{
+    height: 40vh;
+    background: url('../images/daytime_bg.jpeg') center center/cover fixed no-repeat;
+    
+}
+.daytime .daytime-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.daytime .daytime-items .daytime-item{
+    /* margin-right:20px ;
+    margin-top: 20px; */
+   padding-top:10vh ;
+   padding-right: 40px;
+   color: rgb(243, 241, 241);
+   text-align: center;
+}
+.daytime .daytime-items .daytime-item h3{
+    padding: 5px;
+
+}
+.gallary .container{ 
+    height: 80vh;
+}
+.gallary img{
+    width: 250px;
+    height: 200px;
+    border-radius: 7px;
+    margin: 20px;
+}
+.gallary .gallaryitems{
+    display: flex;
+    flex-direction: column;
+}
+.gallary .col1,.gallary .col2{
+    display: flex;
+    justify-content: center;
+   
+    
+}
+.gallary{
+    background: url('../images/offer-background.jpg') center center/cover fixed;
+  padding: 80px 0 50px 0;
+}
+.gallary h2{
+    color: white;
+    
+}
+h2,h2{
+    text-transform: capitalize;
+}
+.contact .container{
+    height: 60vh;
+   
+}
+.contactitems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px ;
+ 
+}
+.contactitems .leftside{
+    padding-right: 150px;
+}
+.contactitems .leftside h3{
+    color: rgba(49, 11, 53, 0.848);
+    padding:30px 0 20px 0 ;
+}
+.contactitems .leftside p{
+    color: #9a9a9a;
+    line-height: 1.6;
+}
+.contactitems .leftside p i{
+    color: rgba(255, 255, 0, 0.886);
+padding-right:7px ;
+}
+.contactitems .leftside span i {
+    padding: 10px;
+    color: white;
+    background: #1e0b2d;
+border-radius: 50%;
+font-size: 20px;
+    
+
+}
+.contactitems .leftside span a :hover{
+    background: rgb(237, 196, 15);
+}
+.contactitems .rightside{
+
+}
+form{
+    width: 100%;
+}
+form input,textarea{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    background: #fefe486a;
+    resize: none;
+}
+
+
+.contact .btn{
+    font-family: serif;
+    font-size: 20px;
+}
+footer{
+    background: #383848;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+footer a{
+    color: rgb(140, 234, 25);
+    text-decoration: none;
+}
